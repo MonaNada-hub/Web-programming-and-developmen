@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Mona Abu Nada - Royal Green CV
+    </title>
+
+    <style>
+
+        /* ===================== */
+        /* Global Styles */
+        /* ===================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #021b1a,
+                    #043d38,
+                    #065f46,
+                    #064e3b
+                );
+
+            color: white;
+
+            padding: 40px;
+
+        }
+
+        /* ===================== */
+        /* Main Container */
+        /* ===================== */
+
+        main {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            background:
+                rgba(255, 255, 255, 0.05);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.08);
+
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 10px 40px rgba(0, 0, 0, 0.45);
+
+            backdrop-filter: blur(12px);
+
+        }
+
+        /* ===================== */
+        /* Header */
+        /* ===================== */
+
+        header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            padding: 45px;
+
+            background:
+                linear-gradient(
+                    to right,
+                    #10b981,
+                    #059669,
+                    #047857,
+                    #065f46
+                );
+
+        }
+
+        header img {
+
+            width: 170px;
+
+            height: 170px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.35);
+
+        }
+
+        header h1 {
+
+            font-size: 50px;
+
+            margin-bottom: 12px;
+
+        }
+
+        header p {
+
+            font-size: 20px;
+
+            color: #ecfdf5;
+
+        }
+
+        /* ===================== */
+        /* Layout */
+        /* ===================== */
+
+        .container {
+
+            display: flex;
+
+            gap: 30px;
+
+            padding: 40px;
+
+        }
+
+        .content {
+
+            flex: 2;
+
+        }
+
+        aside {
+
+            flex: 1;
+
+            background:
+                rgba(16, 185, 129, 0.08);
+
+            padding: 25px;
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(110, 231, 183, 0.15);
+
+        }
+
+        /* ===================== */
+        /* Sections */
+        /* ===================== */
+
+        section {
+
+            margin-bottom: 35px;
+
+            padding: 25px;
+
+            background:
+                rgba(255, 255, 255, 0.04);
+
+            border-radius: 18px;
+
+            border:
+                1px solid rgba(110, 231, 183, 0.12);
+
+            transition: 0.3s;
+
+        }
+
+        section:hover {
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 10px 25px rgba(16, 185, 129, 0.25);
+
+        }
+
+        section h2 {
+
+            color: #6ee7b7;
+
+            margin-bottom: 15px;
+
+            font-size: 28px;
+
+        }
+
+        section p {
+
+            line-height: 1.9;
+
+            color: #d1fae5;
+
+        }
+
+        /* ===================== */
+        /* Lists */
+        /* ===================== */
+
+        ul {
+
+            padding-left: 20px;
+
+        }
+
+        li {
+
+            margin-bottom: 12px;
+
+            color: #ecfdf5;
+
+        }
+
+        /* ===================== */
+        /* Skills */
+        /* ===================== */
+
+        #skills-title + ul li {
+
+            background:
+                rgba(16, 185, 129, 0.12);
+
+            border:
+                1px solid rgba(110, 231, 183, 0.2);
+
+            padding: 12px;
+
+            border-radius: 12px;
+
+            list-style: none;
+
+            margin-bottom: 12px;
+
+        }
+
+        /* ===================== */
+        /* Links */
+        /* ===================== */
+
+        a {
+
+            color: #a7f3d0;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+        a:hover {
+
+            color: white;
+
+            text-decoration: underline;
+
+        }
+
+        /* ===================== */
+        /* Profiles */
+        /* ===================== */
+
+        #profiles-title + div {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+
+        }
+
+        #profiles-title + div a {
+
+            padding: 14px;
+
+            background:
+                rgba(255, 255, 255, 0.05);
+
+            border-radius: 14px;
+
+            text-align: center;
+
+            transition: 0.3s;
+
+        }
+
+        #profiles-title + div a:hover {
+
+            background:
+                linear-gradient(
+                    to right,
+                    #10b981,
+                    #047857
+                );
+
+            color: white;
+
+        }
+
+        /* ===================== */
+        /* Footer */
+        /* ===================== */
+
+        footer {
+
+            text-align: center;
+
+            padding: 25px;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.08);
+
+            color: #d1fae5;
+
+        }
+
+        /* ===================== */
+        /* Responsive */
+        /* ===================== */
+
+        @media (max-width: 900px) {
+
+            .container {
+
+                flex-direction: column;
+
+            }
+
+            header {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- ===================== -->
+        <!-- Header -->
+        <!-- ===================== -->
+
+        <header>
+
+            <img
+                src="profile.jpg"
+                alt="Portrait of Mona Abu Nada"
+            >
+
+            <div>
+
+                <h1>
+                    Mona Abu Nada
+                </h1>
+
+                <p>
+                    Intelligent Systems and Computer Engineering Student
+                    | Back-End Developer
+                </p>
+
+            </div>
+
+        </header>
+
+        <!-- ===================== -->
+        <!-- Main Layout -->
+        <!-- ===================== -->
+
+        <div class="container">
+
+            <!-- ===================== -->
+            <!-- Main Content -->
+            <!-- ===================== -->
+
+            <div class="content">
+
+                <section aria-labelledby="about-title">
+
+                    <h2 id="about-title">
+                        About Me
+                    </h2>
+
+                    <p>
+
+                        I am an intelligent systems and computer engineering
+                        student with practical back-end development experience
+                        and a strong passion for programming and software development.
+
+                    </p>
+
+                    <p>
+
+                        I enjoy building practical solutions,
+                        learning modern technologies,
+                        collaborating effectively in teams,
+                        and improving my skills through
+                        continuous self-learning.
+
+                    </p>
+
+                </section>
+
+                <section aria-labelledby="education-title">
+
+                    <h2 id="education-title">
+                        Education
+                    </h2>
+
+                    <p>
+
+                        Bachelor's student in Intelligent Systems
+                        and Computer Engineering,
+                        focusing on programming,
+                        software development,
+                        and practical problem solving.
+
+                    </p>
+
+                </section>
+
+                <section aria-labelledby="additional-title">
+
+                    <h2 id="additional-title">
+                        Additional Qualifications
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            Intermediate English proficiency
+                        </li>
+
+                        <li>
+                            Completed a Software Engineering course
+                        </li>
+
+                        <li>
+                            Comfortable working in development teams
+                        </li>
+
+                        <li>
+                            Passionate about clean code and best practices
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section aria-labelledby="contact-title">
+
+                    <h2 id="contact-title">
+                        Contact
+                    </h2>
+
+                    <ul>
+
+                        <li>
+                            <strong>Age:</strong> 22
+                        </li>
+
+                        <li>
+
+                            <strong>Email:</strong>
+
+                            <a href="mailto:monaabonada@gmail.com">
+                                monaabonada@gmail.com
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <strong>Phone:</strong>
+
+                            <a href="tel:0599238743">
+                                0599238743
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </div>
+
+            <!-- ===================== -->
+            <!-- Sidebar -->
+            <!-- ===================== -->
+
+            <aside>
+
+                <section aria-labelledby="skills-title">
+
+                    <h2 id="skills-title">
+                        Skills
+                    </h2>
+
+                    <ul>
+
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Kotlin</li>
+                        <li>Back-End Development</li>
+                        <li>HTML & CSS</li>
+                        <li>Problem Solving</li>
+                        <li>Git & GitHub</li>
+                        <li>Teamwork and Collaboration</li>
+                        <li>Logical Thinking</li>
+                        <li>Self-Learning Ability</li>
+
+                    </ul>
+
+                </section>
+
+                <section aria-labelledby="profiles-title">
+
+                    <h2 id="profiles-title">
+                        Profiles
+                    </h2>
+
+                    <div>
+
+                        <a
+                            href="https://github.com/MonaNada-hub"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/mona-abunada-b47ba1251/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+        <!-- ===================== -->
+        <!-- Footer -->
+        <!-- ===================== -->
+
+        <footer>
+
+            <p>
+                Designed and Developed by Mona Abu Nada © 2026
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
