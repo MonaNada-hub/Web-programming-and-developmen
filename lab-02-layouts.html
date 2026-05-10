@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form
+        action="/register"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+
+        <!-- ===================== -->
+        <!-- Personal Information -->
+        <!-- ===================== -->
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <p>
+
+                <label for="full-name">
+                    Full Name
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full_name"
+                    placeholder="Enter your full name"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                    autofocus
+                >
+
+            </p>
+
+            <p>
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+            </p>
+
+            <p>
+
+                <label for="password">
+                    Password
+                </label>
+
+                <br>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Minimum 8 characters"
+                    minlength="8"
+                    required
+                >
+
+            </p>
+
+            <p>
+
+                <label for="birth-date">
+                    Date of Birth
+                </label>
+
+                <br>
+
+                <input
+                    type="date"
+                    id="birth-date"
+                    name="birth_date"
+                    required
+                >
+
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- ===================== -->
+        <!-- Academic Information -->
+        <!-- ===================== -->
+
+        <fieldset>
+
+            <legend>Academic Information</legend>
+
+            <p>
+
+                <label for="major">
+                    Major
+                </label>
+
+                <br>
+
+                <select
+                    id="major"
+                    name="major"
+                    required
+                >
+
+                    <option value="">
+                        -- Select Major --
+                    </option>
+
+                    <option value="computer-science">
+                        Computer Science
+                    </option>
+
+                    <option value="information-technology">
+                        Information Technology
+                    </option>
+
+                    <option value="software-engineering">
+                        Software Engineering
+                    </option>
+
+                </select>
+
+            </p>
+
+            <p>
+
+                Gender
+
+                <br><br>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    required
+                >
+
+                <label for="male">
+                    Male
+                </label>
+
+                <br>
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                >
+
+                <label for="female">
+                    Female
+                </label>
+
+            </p>
+
+            <p>
+
+                Programming Skills
+
+                <br><br>
+
+                <input
+                    type="checkbox"
+                    id="html-css"
+                    name="skills"
+                    value="html-css"
+                >
+
+                <label for="html-css">
+                    HTML & CSS
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="python"
+                    name="skills"
+                    value="python"
+                >
+
+                <label for="python">
+                    Python
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="java"
+                    name="skills"
+                    value="java"
+                >
+
+                <label for="java">
+                    Java
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="kotlin"
+                    name="skills"
+                    value="kotlin"
+                >
+
+                <label for="kotlin">
+                    Kotlin
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="backend"
+                    name="skills"
+                    value="backend-development"
+                >
+
+                <label for="backend">
+                    Back-End Development
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="problem-solving"
+                    name="skills"
+                    value="problem-solving"
+                >
+
+                <label for="problem-solving">
+                    Problem Solving
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="git-github"
+                    name="skills"
+                    value="git-github"
+                >
+
+                <label for="git-github">
+                    Git & GitHub
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="teamwork"
+                    name="skills"
+                    value="teamwork"
+                >
+
+                <label for="teamwork">
+                    Teamwork and Collaboration
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="logical-thinking"
+                    name="skills"
+                    value="logical-thinking"
+                >
+
+                <label for="logical-thinking">
+                    Logical Thinking
+                </label>
+
+                <br>
+
+                <input
+                    type="checkbox"
+                    id="self-learning"
+                    name="skills"
+                    value="self-learning"
+                >
+
+                <label for="self-learning">
+                    Self-Learning Ability
+                </label>
+
+            </p>
+
+            <p>
+
+                <label for="experience-level">
+                    Experience Level
+                </label>
+
+                <br><br>
+
+                Beginner
+
+                <input
+                    type="range"
+                    id="experience-level"
+                    name="experience_level"
+                    min="0"
+                    max="10"
+                    value="5"
+                >
+
+                Expert
+
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- ===================== -->
+        <!-- Additional Information -->
+        <!-- ===================== -->
+
+        <fieldset>
+
+            <legend>Additional Information</legend>
+
+            <p>
+
+                <label for="profile-photo">
+                    Upload Profile Picture
+                </label>
+
+                <br>
+
+                <input
+                    type="file"
+                    id="profile-photo"
+                    name="profile_photo"
+                    accept="image/*"
+                >
+
+            </p>
+
+            <p>
+
+                <label for="bio">
+                    Short Bio
+                </label>
+
+                <br>
+
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="6"
+                    cols="40"
+                    placeholder="Tell us about yourself..."
+                ></textarea>
+
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <!-- ===================== -->
+        <!-- Terms and Conditions -->
+        <!-- ===================== -->
+
+        <p>
+
+            <strong>
+                Terms and Conditions:
+            </strong>
+
+            <br><br>
+
+            - All information provided must be accurate.
+            <br>
+
+            - The user is responsible for protecting account information.
+            <br>
+
+            - Inappropriate content is not allowed.
+            <br>
+
+            - Submitted data may be used for academic purposes.
+
+        </p>
+
+        <br>
+
+        <p>
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+            >
+
+            <label for="terms">
+                I agree to the Terms and Conditions
+            </label>
+
+        </p>
+
+        <br>
+
+        <!-- ===================== -->
+        <!-- Form Buttons -->
+        <!-- ===================== -->
+
+        <button type="submit">
+            Register
+        </button>
+
+        <button type="reset">
+            Clear Form
+        </button>
+
+    </form>
+
+    <hr>
+
+    <footer>
+
+        <p>
+             Developed by Mona Abu Nada © 2026
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
