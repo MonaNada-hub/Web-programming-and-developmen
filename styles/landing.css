@@ -1,0 +1,493 @@
+/* ===================== */
+/* Global Styles */
+/* ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #021b1a,
+            #043d38,
+            #065f46,
+            #064e3b
+        );
+
+    color: white;
+
+    line-height: 1.7;
+
+}
+
+/* ===================== */
+/* Navbar */
+/* ===================== */
+
+.navbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 80px;
+
+    background:
+        rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    position: sticky;
+
+    top: 0;
+
+}
+
+.logo {
+
+    font-size: 32px;
+
+    color: #6ee7b7;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.nav-links a:hover {
+
+    color: #6ee7b7;
+
+}
+
+/* ===================== */
+/* Hero Section */
+/* ===================== */
+
+.hero {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 100px 80px;
+
+    gap: 50px;
+
+}
+
+.hero-content {
+
+    flex: 1;
+
+}
+
+.hero-content h2 {
+
+    font-size: 60px;
+
+    margin-bottom: 25px;
+
+    color: #d1fae5;
+
+}
+
+.hero-content p {
+
+    font-size: 20px;
+
+    color: #a7f3d0;
+
+    margin-bottom: 35px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+.btn {
+
+    background:
+        linear-gradient(
+            to right,
+            #10b981,
+            #047857
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 15px 28px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(16, 185, 129, 0.35);
+
+}
+
+.secondary-btn {
+
+    background:
+        transparent;
+
+    border:
+        2px solid #6ee7b7;
+
+}
+
+.hero-image {
+
+    flex: 1;
+
+}
+
+.hero-image img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+
+}
+
+/* ===================== */
+/* Features */
+/* ===================== */
+
+.features {
+
+    padding: 100px 80px;
+
+    text-align: center;
+
+}
+
+.features h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 50px;
+
+    color: #d1fae5;
+
+}
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+.card {
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid rgba(110, 231, 183, 0.15);
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(16, 185, 129, 0.25);
+
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+    color: #6ee7b7;
+
+}
+
+.card p {
+
+    color: #d1fae5;
+
+}
+
+/* ===================== */
+/* Journey */
+/* ===================== */
+
+.journey {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 100px 80px;
+
+}
+
+.journey-text {
+
+    flex: 1;
+
+}
+
+.journey-text h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+    color: #d1fae5;
+
+}
+
+.journey-text p {
+
+    margin-bottom: 20px;
+
+    color: #d1fae5;
+
+}
+
+.journey-image {
+
+    flex: 1;
+
+}
+
+.journey-image img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+}
+
+/* ===================== */
+/* Principles */
+/* ===================== */
+
+.principles {
+
+    padding: 100px 80px;
+
+    text-align: center;
+
+}
+
+.principles h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 50px;
+
+    color: #d1fae5;
+
+}
+
+.principles-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+.principle-box {
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    font-weight: bold;
+
+    color: #6ee7b7;
+
+    border:
+        1px solid rgba(110, 231, 183, 0.15);
+
+}
+
+/* ===================== */
+/* Video Section */
+/* ===================== */
+
+.video-section {
+
+    text-align: center;
+
+    padding: 100px 80px;
+
+}
+
+.video-section h2 {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+    color: #d1fae5;
+
+}
+
+.video-section p {
+
+    margin-bottom: 35px;
+
+    color: #d1fae5;
+
+}
+
+.video-section iframe {
+
+    max-width: 100%;
+
+    border-radius: 20px;
+
+    border: none;
+
+}
+
+/* ===================== */
+/* Quote Section */
+/* ===================== */
+
+.quote-section {
+
+    padding: 80px;
+
+    text-align: center;
+
+}
+
+.quote-section blockquote {
+
+    font-size: 32px;
+
+    color: #a7f3d0;
+
+    font-style: italic;
+
+}
+
+/* ===================== */
+/* Footer */
+/* ===================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    background:
+
+        rgba(0, 0, 0, 0.3);
+
+    color: #d1fae5;
+
+}
+
+/* ===================== */
+/* Responsive Design */
+/* ===================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+    .hero,
+    .journey {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .features-grid,
+    .principles-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
